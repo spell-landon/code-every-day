@@ -51,12 +51,13 @@ function find_average(array) {
 
 I started off the morning before class doing another CodeWars challenge. Since we just started learning Python YESTERDAY, I decided to challenge myself with a Python coding challenge. This one was to take a function that accepts a boolean, and return "Yes" if true, "No" if false.
 
+After class, I 
+
 ### Thoughts:
 
 I first started out with the long form (I will show below), but then thought, "There has to be a shorter way to do this..." so I researched the Python version of a ternary operator and implemented that!
 
 First passing attempt:
-
 ```python
 def bool_to_word(boolean):
     if boolean == True:
@@ -64,12 +65,47 @@ def bool_to_word(boolean):
     if boolean == False:
         return "No"
 ```
-
 Using a ternary:
 
 ```python
 def bool_to_word(boolean):
     return "Yes" if boolean else "No"
+```
+
+After class CodeWars:
+1. Check if number is negative, if neg -> return number, if pos -> return that number but negative
+```python
+def make_negative( number ):
+    return -abs(number) if number >= 0 else number
+```
+2. Repeat a string
+```python
+def repeat_str(repeat, string):
+    return string * repeat
+```
+3. Get the centurt of a specific year. (The '- 1' accounts for years like 1900, 2000, etc.)
+```python
+def century(year):
+    return (year - 1) // 100 + 1
+```
+4. Reverse a string
+```python
+def solution(string):
+    return string[::-1]
+```
+5. Return the highest and lowest number.
+```python
+def high_and_low(numbers):
+    ls = []
+    for num in numbers.split():
+        try:
+            ls.append(int(num))
+        except:
+            pass
+    try:
+        return f"{max(ls)} {min(ls)}"
+    except:
+        pass
 ```
 
 ### Link(s) to work:
