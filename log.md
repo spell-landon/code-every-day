@@ -135,6 +135,8 @@ def high_and_low(numbers):
 
 I started off today starting and finishing the graphs assignment. The goal was to create a new Graph with methods to add nodes and edges. After completing that, I've moved on to completing a few CodeWars challenges, I think I'm going to mix it up between JS and Python today.
 
+I'm shifting over to completing my portfolio project now. The repo is named 'portfolio-blue' (which I definitely need to change), because I've gone through 2 other iterations of this portfolio site and this one has kind of a blue-er theme to it.
+
 ### Thoughts:
 
 Python #1. Even or Odd checker
@@ -163,4 +165,3 @@ def invert(lst):
             list.append(0)
     return list
 ```
-
