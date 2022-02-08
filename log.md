@@ -2,7 +2,7 @@
 
 ## Day 1: February 2, 2022
 
-### Today's Progress:
+#### Today's Progress:
 
 Today, I am beginning the challenge. I'm starting off with a problem from codewars.com. The Kata for today is to remove the first and last character from a string.
 
@@ -165,6 +165,7 @@ def invert(lst):
             list.append(0)
     return list
 ```
+
 ## Day 5: February 6, 2022
 
 ### Today's Progress:
@@ -175,15 +176,16 @@ Today was all about CodeWars (Python and JavaScript) and finishing my portfolio 
 
 ### Today's Progress:
 
-Learned the basics of Django and setup a backend with two user models. 
+Learned the basics of Django and setup a backend with two user models.
 Tackled additional CodeWar challenges
 
 ### Thoughts:
 
 Django was tougher than I thought. But after letting it sink in a bit, I understand the logic behind it. Still need ALOT more practice, but that's what this is for!
 
-CodeWars #1: 
-I spent the first 10 minutes with a successfull solution that wasn't working... THEN I realized that I was writing a Pythonic solution for a Javascript problem!!! 
+CodeWars #1:
+I spent the first 10 minutes with a successfull solution that wasn't working... THEN I realized that I was writing a Pythonic solution for a Javascript problem!!!
+
 ```JS
 function bmi(weight, height) {
   let bmi = weight / (height ** 2);
@@ -203,12 +205,15 @@ function bmi(weight, height) {
 ```
 
 CodeWars #2: Python
+
 ```python
 def find_short(s):
     word = map(len, s.split())
     return min(word)
 ```
+
 CodeWars #3: Python
+
 ```python
 def sum_of_minimums(numbers):
     min_num = []
@@ -220,7 +225,9 @@ def sum_of_minimums(numbers):
         sum += i
     return sum
 ```
+
 CodeWars #4: Python
+
 ```python
 def solution(s):
     list = []
@@ -230,4 +237,34 @@ def solution(s):
         list.append(s[:2])
         s = s[2:]
     return list
+```
+
+CodeWars #5: Python
+Tested myself with this one, played a little code golf to get the shortest solution
+
+```python
+def oddOrEven(arr):
+    return 'even' if sum(arr) % 2 == 0 else 'odd'
+```
+
+CodeWars #6: Python
+Used set for the first time in a solution!
+
+```python
+def is_isogram(string):
+    return len(string) == len(set(string.lower()))
+```
+
+CodeWars #7: Python
+
+```python
+def longest(a1, a2):
+    # a3 = []
+    # a4 = []
+    # a3.extend(a1)
+    # a3.extend(a2)
+    # a4.extend(set(a3))
+    # a4.sort()
+    # return ''.join(a4)
+    return ''.join(sorted(set(a1 + a2)))
 ```
