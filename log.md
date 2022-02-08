@@ -165,3 +165,69 @@ def invert(lst):
             list.append(0)
     return list
 ```
+## Day 5: February 6, 2022
+
+### Today's Progress:
+
+Today was all about CodeWars (Python and JavaScript) and finishing my portfolio page!
+
+## Day 6: February 7, 2022
+
+### Today's Progress:
+
+Learned the basics of Django and setup a backend with two user models. 
+Tackled additional CodeWar challenges
+
+### Thoughts:
+
+Django was tougher than I thought. But after letting it sink in a bit, I understand the logic behind it. Still need ALOT more practice, but that's what this is for!
+
+CodeWars #1: 
+I spent the first 10 minutes with a successfull solution that wasn't working... THEN I realized that I was writing a Pythonic solution for a Javascript problem!!! 
+```JS
+function bmi(weight, height) {
+  let bmi = weight / (height ** 2);
+  if (bmi <= 18.5) {
+    return 'Underweight'
+  }
+  else if (bmi <= 25) {
+    return 'Normal'
+  }
+  else if (bmi <= 30) {
+    return 'Overweight'
+  }
+  else {
+    return 'Obese'
+  }
+}
+```
+
+CodeWars #2: Python
+```python
+def find_short(s):
+    word = map(len, s.split())
+    return min(word)
+```
+CodeWars #3: Python
+```python
+def sum_of_minimums(numbers):
+    min_num = []
+    sum = 0
+    for arr in numbers:
+        arr.sort()
+        min_num.extend(arr[:1])
+    for i in min_num:
+        sum += i
+    return sum
+```
+CodeWars #4: Python
+```python
+def solution(s):
+    list = []
+    if len(s) % 2 == 1:
+        s += '_'
+    while s:
+        list.append(s[:2])
+        s = s[2:]
+    return list
+```
