@@ -268,3 +268,23 @@ def longest(a1, a2):
     # return ''.join(a4)
     return ''.join(sorted(set(a1 + a2)))
 ```
+
+## Day 7: February 22, 2022
+
+### Today's Progress:
+
+I haven't been on in a while doing these coding challenges. Took a few days after GA to decompress and spend time with family. Now I'm back at it doing some CodeWars, applying to jobs and hopefully going to finish up some projects!
+
+### Thoughts:
+
+CodeWars #1:
+
+```JS
+function feast(beast, dish) {
+    if(beast[0] === dish[0] && beast.slice(-1) === dish.slice(-1)){
+        return true;
+    }else{
+        return false;
+    }
+}
+```
